@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+<style>
+    @media only screen and (max-width: 600px) {
+        .vulnerable
+        {
+            visibility: hidden;
+        }
+    }
+</style>
+<body>
+    <div>
+        <h1>Will be visible all the time</h1>
+        <h1 class="vulnerable">will be visible only for screen sizes Greater than 600px</h1>
+    </div>
+</body>
+</html>
