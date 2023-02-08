@@ -7,53 +7,129 @@
     <title>Assignment 3</title>
 </head>
 <style>
-    *
+    *,body
     {
-        margin: 0;
+        margin: 0%;
     }
-    body{
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
+    header{
+        /* border: 1px solid black; */
+        
+        position: fixed;
+        top: 0%;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        background-color: #333;
     }
-    header
+    .logo
     {
-        border: 1px solid black;
+        margin-left: 20px;
     }
-    .main{
-     height: 100%; 
-     border: 2px solid black;
+    ul
+    {
+        text-decoration: none;
+        margin-right: 20px;
     }
-    .left-bar
+    li
     {
         display: inline;
-        border: 2px solid red;
+        margin-left: 20px;
+        padding: 18px 10px;
     }
-    .side-bar
+    li:hover{
+        background-color: green;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .navLinks
     {
-        display: inline;
-        border: 2px solid green;
+        text-decoration: none;
+        color: white;
+
     }
+
+
+    
     footer
     {
         position: absolute;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
         width: 100%;
-        bottom: 0%;
-        border: 1px solid black;
+        height: 7.5%;
+        /* border: 1px solid black; */
+        background-color: gray;
 
     }
+    .section
+    {
+        display: flex;
+        margin-top: 50px;
+        height: 823px;
+        border: 2px solid green;
+        overflow: hidden;
+    }
+    .leftBar
+    {
+        width: 15%;
+        background-color: #f1f1f1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .leftBar div{
+        padding: 10px;
+    }
+    
+    .sideBar
+    {
+        width: 85%;
+        padding: 20px 10px;
+        font-size: 2rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* border: 5px solid black; */
+      
+    }
+
+    
 </style>
 <body>
-    <header><h1>Header</h1></header>
-    <div class="main">
-        <div class="left-bar">
-            left-bar
+    <header>
+        <div class="logo">
+            <img src="./logo.png" alt="" width="100px">
         </div>
-        <div class="side-bar">
-            side-bar      
+        <nav>
+            <ul>
+                <li><a class="navLinks" href="#">Home</a></li>
+                <li><a class="navLinks" href="#">About</a></li>
+                <li><a class="navLinks" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="leftBar">
+            <div>
+                <div class="leftbar-links" ><a  href="#">Profile</a></div>
+                <div class="leftbar-links" ><a  href="#">About</a></div>
+                <div class="leftbar-links" ><a  href="#">Contact</a></div>
+                <div class="leftbar-links" ><a  href="#">Log Out</a></div>
+            </div>
         </div>
-    </div>
-    <footer><h1>footer </h1></footer>
+        <div class="sideBar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, vitae beatae. Harum reprehenderit voluptas illum nisi dignissimos sunt corrupti eaque a omnis soluta dolores pariatur quo incidunt architecto, aut at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis harum id repellat exercitationem dignissimos nulla! Iure recusandae ipsum esse, repellendus nemo enim, provident maiores voluptates dignissimos consectetur, consequatur sapiente nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste, odio commodi id optio ipsam ab exercitationem reiciendis magnam eius ducimus aut excepturi in similique expedita laudantium? Similique, veniam eius.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, vitae beatae. Harum reprehenderit voluptas illum nisi dignissimos sunt corrupti eaque a omnis soluta dolores pariatur quo incidunt architecto, aut at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis harum id repellat exercitationem dignissimos nulla! Iure recusandae ipsum esse, repellendus nemo enim, provident maiores voluptates dignissimos consectetur, consequatur sapiente nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste, odio commodi id optio ipsam ab exercitationem reiciendis magnam eius ducimus aut excepturi in similique expedita laudantium? Similique, veniam eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, vitae beatae. Harum reprehenderit voluptas illum nisi dignissimos sunt corrupti eaque a omnis soluta dolores pariatur quo incidunt architecto, aut at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis harum id repellat exercitationem dignissimos nulla! Iure recusandae ipsum esse, repellendus nemo enim, provident maiores voluptates dignissimos consectetur, consequatur sapiente nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste, odio commodi id optio ipsam ab exercitationem reiciendis magnam eius ducimus aut excepturi in similique expedita laudantium? Similique, veniam eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, vitae beatae. Harum reprehenderit voluptas illum nisi dignissimos sunt corrupti eaque a omnis soluta dolores pariatur quo incidunt architecto, aut at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis harum id repellat exercitationem dignissimos nulla! Iure recusandae ipsum esse, repellendus nemo enim, provident maiores voluptates dignissimos consectetur, consequatur sapiente nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste, odio commodi id optio ipsam ab exercitationem reiciendis magnam eius ducimus aut excepturi in similique expedita laudantium? Similique, veniam eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, vitae beatae. Harum reprehenderit voluptas illum nisi dignissimos sunt corrupti eaque a omnis soluta dolores pariatur quo incidunt architecto, aut at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis harum id repellat exercitationem dignissimos nulla! Iure recusandae ipsum esse, repellendus nemo enim, provident maiores voluptates dignissimos consectetur, consequatur sapiente nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste, odio commodi id optio ipsam ab exercitationem reiciendis magnam eius ducimus aut excepturi in similique expedita laudantium? Similique, veniam eius.
+        </div>
+    </section>
+    <footer>
+        <div>Copyrigth @SufiyanMalek</div>
+    </footer>
 </body>
 </html>
