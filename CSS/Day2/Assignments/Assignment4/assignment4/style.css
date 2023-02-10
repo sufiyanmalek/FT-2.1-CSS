@@ -1,0 +1,27 @@
+*
+{
+    margin: 0;
+}
+body
+{
+    padding: 0;
+}
+.container
+{
+    /* border: 2px solid black; */
+}
+.nav
+{
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
+}
+.logo
+{
+    border: 2px solid red;
+}
+.links
+{
+    border: 2px solid blue;
+    align-items: center;
+}
