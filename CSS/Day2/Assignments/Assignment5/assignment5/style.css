@@ -12,6 +12,7 @@ body
 .nav
 {
     display: flex;
+    flex-wrap: wrap;
     background-color: rgb(100, 100, 100);
     border-bottom: 3px solid rgb(0, 137, 201);
     align-items: center;
@@ -27,6 +28,10 @@ body
     outline: none;
     border-color: white;
     box-shadow: 0 0 20px white;
+}
+.nav-links
+{
+    display: flex;
 }
 .links 
 {

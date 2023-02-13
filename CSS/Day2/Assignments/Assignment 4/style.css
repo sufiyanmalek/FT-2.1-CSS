@@ -1,337 +1,367 @@
-body{
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 100vw;
-  overflow-x: hidden;
 }
-
-.MainNavContainer{
-  height: auto;
-  width: 100vw;
+body{
+  margin: 0px;
+}
+.header{
+  display:flex;
+  justify-content: space-between;
   background-color: #efeff1;
-  border: 2px solid #d4d4d6;
+  width:100%;
+  padding: 10px;
+  border :1px solid black;
 }
-.Navbar{
-  width: 65%;
-  margin: auto;
+.navbar{
+margin-top: 10px;
+}
+.shopping img{
+  width:20px; 
+}
+.Signin img{
+  width:20px; 
+}
+.shopping{
+  padding: 0px 10%;
   display: flex;
   align-items: center;
+}
+.Signin{
+  padding-right:10% ;
+  display: flex;
+  align-items: center;
+}
+.nav1{
+  display:flex;
   justify-content: space-between;
 }
-
-.C1{
-  height: 100%;
-  display: flex;
-  align-items: center;
+.logo{
+  padding: 0px 10%;
 }
-
-.C1 p{
-  margin-left: 10px;
+.number{
+  padding-top: 30px;
+  padding-right: 10%;
+  text-align: center ;
+  color: #717171  ;
 }
-
-.C1 img{
-  height: 70%;
-  transform: scaleX(-1);
-  height: 20px;
-}
-
-.LogoContainer{
-  width:65%;
-  margin: auto;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.LogoContainer img{
-  height: 130px;
-}
-
-.LogoContainer p{
-  font-size: 45px;
-  font-weight: 1000;
-  color: #707070;
-  line-height: 0;
-}
-
-.TabsContainer{
-  width: 65%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.TabsContainer p{
-  font-size: large;
-  font-weight: 500;
-}
-
-.TabsContainer p:last-child{
-  background-color: #fd8a00;
-  padding: 15px;
-  color: white;
-}
-
-.SectionCont1{
-  width: 100vw;
-  border-top: 2px solid rgb(209, 209, 209);
-  border-bottom: 2px solid rgb(209, 209, 209);
-  background-color: #efeff1;
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-  padding: 30px 0;
-}
-
-.C2{
-  width: 65%;
-  margin: auto;
-  height: 100%;
-  display: flex;
-}
-
-.HeadingCont{
-  width: 50%;
-  color: #5b5b5d;
-}
-
-.HeadingCont p:first-child{
-  font-size: 65px;
-  font-weight: 600;
-  line-height: 0;
-}
-
-.HeadingCont p:nth-child(2){
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 0;
-}
-
-.HeadingCont p:nth-child(3){
-  margin-top: 50px;
-}
-
-.HeadingCont button{
-  margin-top: 30px;
-  padding: 5px 30px;
-  font-size: xx-large;
-  font-weight: 600;
-  color: white;
-  background-color: #fd8a00;
-  border-radius: 20px;
-  border: none;
-}
-.FormCont{
-  width: 50%;font-size: 30px;
-  font-weight: 600;
-  line-height: 0;
-}
-
-.FormCont form{
+.nav2{
+  margin: 20px 10%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-between;
 }
-
-.FormCont input{
-  width: calc(50% - 40px);
-  margin-top: 25px;
-  padding: 15px;
-  border: thin solid grey;
+.nav2 a{
+  text-decoration: none;
+  color:#575757;
+  padding :10px;  
+}
+.nav2 a:hover{
+  background-color: #fe8300;
+  color: white;
+}
+.formSection{
+  margin-top: 20px;
+  padding-bottom: 40px;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  background-color: rgba(239,239,241,255);
+  
+}
+.Form1{
+  margin-top: 30px;
+  padding : 0px 10%;
+  width: 45%;
+}
+.Form2{
+  padding-top: 2%;
+  padding-right: 10%;
+  justify-content: center;
+}
+input{
+  margin: 10px;
+  padding:10px;
+  background-color: rgba(239,239,241,255);
+  border: 1px solid grey;
   border-radius: 10px;
 }
-
-.FormCont input::placeholder{
-  font-size: large;
-  color: grey;
+textarea{
+  margin: 15px;
+  padding:10px;
+  background-color: rgba(239,239,241,255);
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 400px;
 }
 
-.FormCont textarea{
-  width: 100%;
-  border-radius: 15px;
-  margin-top: 25px;
-}
-
-.FormCont textarea::placeholder{
+.FormButton{
   padding: 10px;
-  font-size: x-large;
-}
-
-.SubmitButton{
-  width: 100% !important;
-  background-color: #fd8a00;
+  background-color: #ff8800;
+  border-radius: 10px;
+  border: 0px;
   color: white;
-  font-size: xx-large;
-  font-weight: 500;
-  border: none !important;
-  padding: 5px !important;
+  width: 150px;
 }
-
-.SectionCont2{
-  width: 100%;
-  height: auto;
+.FormButton2{
+  padding: 10px;
+  background-color: #ff8800;
+  border-radius: 10px;
+  border: 0px;
+  color: white;
+  width:100%;
+}
+button:hover{
+  background-color: #ff8800;
+}
+.bluediv{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2px;
+  justify-content: space-between;
   background-color: #209bde;
-  margin-top: 5px;
-  padding: 30px 0;
+  padding-bottom: 20px;
 }
-
-.C3{
-  width: 65%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.C3 p:first-child{
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 0;
-  color: white;
-}
-
-.C3 p:nth-child(2){
-  font-size: large;
-  color: white;
-}
-
-.C3 div:first-child{
-  width: 65%;
-}
-
-.C3 button{
-  width:auto;
-  padding: 30px;
-  font-size: x-large;
-  line-height: 0;
-  color: #209bde;
-  font-weight: bold;
-  border: none;
-}
-
-
-.SectionCont3{
-  width: 100%;
-  height: auto;
-  background-color: #efeff1;
-  padding: 30px 0;
-  border-top: 2px solid rgb(209, 209, 209);
-  border-bottom: 2px solid rgb(209, 209, 209);
-
-}
-
-
-.C4{
-  width: 65%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.C4 img{
+.bluediv1{
+  padding: 20px 10%;
+  padding-bottom: 20px;
   width: 60%;
 }
+.bluediv2{
+  padding-top: 4%;
+  padding-right: 10%; 
 
-.SectionCont3 .HeadingCont{
-  width: 35%;
 }
-
-.C4 button{
- border-radius: 0 !important; 
- padding: 10px 30px;
+.Bluebutton2{
+  background-color: white;
+  color: #209bde;
+  border: #209bde;
+  padding:10px;
+  border-radius: 0px;
 }
-
-.SectionCont4{
-  width: 100%;
-  height: auto;
-  padding: 30px 0;
+.VideoDiv{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  background-color:#efeff1;
+  padding-top: 40px;
 }
-
-
-.C5{
-  width: 65%;
-  height: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 10px;
+.VideoDiv1{
+  padding:0px 10%;
+  width: 60%;
+  height: 400px;
 }
-
-.Cards{ 
-  width: 100%;
-  min-height: 300px;
-  overflow: hidden;
+.VideoDiv2{ 
+  padding-right: 10%;
+  width:40%;
 }
-
-.Cards img{
-  width: 400px;
-  height: 300px;
-}
-
-.Cards p:nth-child(2){
-  font-size: x-large;
-  line-height: 0;
-}
-
-.SectionCont4 button{
+#videobutton{
+  padding: 10px;
+  background-color: #ff8800;
+  border: 0px;
+  color: white;
+  width: 150px;
+  border-radius:0px;
   margin-top: 30px;
-  padding: 10px 30px;
-  font-size: xx-large;
-  font-weight: 600;
-  color: white;
-  background-color: #fd8a00;
-  border: none;
+  stroke-width: 10px;
+}
+.CardDiv{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  padding:40px 10%;
 }
 
-.SectionCont5{
-  width: 100%;
-  height: auto;
-  padding: 30px 0;
+.CardDiv1{
+  padding: 0px 10%;
+}
+.CardText{
+  width:100%;
+}
+.projectButton{
+  border-radius:0px;
+  background-color: #fe8300;
+  padding: 10px;
+  color:white;
+  border: #fe8300;
+  margin-top: 30px;
+  stroke-width: 10px;
+}
+.CardButton{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #959595;
-}
-
-
-.C6{
-  width: 65%;
-  height: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 10px;
-}
-
-.C6 ul{
-  color: white !important;
-  font-size: large;
-}
-
-.List{
-  padding: 0;
-  list-style: none;
-}
-
-.SectionCont6{
-  width: 100%;
-  height: 60px;
-  background-color: #6F6F6F;
-  text-align: center;
-  display: flex;
-  align-items: center;
   justify-content: center;
+}
+footer{
+  margin-top: 40px;
+  padding: 0 10%;
+  background-color: hsl(0, 0%, 58%);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top:40px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+}
+
+.footerdiv {
+  text-decoration: none;
+  display: grid;
+  grid-template-rows: auto;
+}
+.footerdiv a{
   color: white;
-  font-size: large;
-  word-spacing: 4px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.copyright{
+  background-color: #707070;
+  display: flex;
+  justify-content:center;
+  padding:20px;
+}
+
+@media screen and (min-width:320px) and (max-width:824px) {
+  .CardDiv{
+      display:grid;
+      grid-template-columns: auto;
+      padding-top: 40px;
+      place-items: center;
+  }
+  .CardDiv1{
+      padding: 10% 0px 0px 10px; 
+      width:80%;
+  }
+  .CardText{
+      width:100%;
+  }
+  .CardImg img{
+      width: 100%;
+  }
+  .copyright h3{
+      font-size: 13px;
+  }
+  .VideoDiv1{
+      padding:10% 10%;
+      width: 100%;
+      height: 400px;
+  }
+  .VideoDiv2{ 
+      padding:10%;
+      width:100%;
+  }
+
+  .Form1{
+      margin-top: 30px;
+      padding : 0px 10%;
+      width: 100%;
+  }
+  .Form2{ 
+      padding: 2% 10%;
+      display: flex;
+      justify-content: center;
+  
+  }
+  .bluediv1{
+      padding: 20px 10%;
+      padding-bottom: 20px;
+      width: 100%;
+  }
+  .bluediv2{
+      padding-top: 4%;
+      padding-left: 20%;
+
+  }
+  footer{
+      display: grid;
+      grid-template-columns: auto auto;
+  }
+  #videobutton{
+      padding: 10px;
+      background-color: #ff8800;
+      border: 0px;
+      color: white;
+      width: 150px;
+      border-radius:0px;
+      margin-top: 30px;
+      margin-left: 40px;
+      stroke-width: 10px;
+  }
+  .Bluebutton2{
+      background-color: white;
+      color: #209bde;
+      border: #209bde;
+      padding:10px;
+      margin-left: 40px;
+      border-radius: 0px;
+  }
+  .projectButton{
+          border-radius:0px;
+          background-color: #fe8300;
+          padding: 10px;
+          color:white;
+          border: #fe8300;
+          stroke-width: 10px;
+  }
+  textarea{
+      margin: 15px;
+      padding:10px;
+      background-color: rgba(239,239,241,255);
+      border: 1px solid grey;
+      border-radius: 10px;
+      width: 200px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:824px) {
+  footer{
+      display: grid;
+      grid-template-columns: auto auto auto;
+  }
+  .Bluebutton2{
+      background-color: white;
+      color: #209bde;
+      border: #209bde;
+      padding:10px;
+      margin: opx;
+      border-radius: 0px;
+  }
+  .VideoDiv1{
+      padding:0px 10%;
+      width: 100%;
+      height: 400px;
+  }
+  .VideoDiv2{ 
+      padding-top:5px ;
+      width:100%;
+  }
+  textarea{
+      margin: 15px;
+      padding:10px;
+      background-color: rgba(239,239,241,255);
+      border: 1px solid grey;
+      border-radius: 10px;
+      width: 400px;
+  }
+  .CardDiv{
+      display:grid;
+      grid-template-columns: auto ;
+      place-items: center;
+      padding:40px 10%;
+  }
+  
+  .CardDiv1{
+     width: 80%;
+      
+  }
+  .CardImg img{
+      width: 90%;
+  }
+  .CardText{
+      width:80%;
+  }
+  .nav2{
+      margin: 20px 10%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; 
+  }
 }
