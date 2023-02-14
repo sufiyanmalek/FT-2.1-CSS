@@ -32,6 +32,7 @@ body
 .nav-links
 {
     display: flex;
+    flex-wrap: wrap;
 }
 .links 
 {
@@ -58,10 +59,11 @@ body
 .big-img
 {
     padding: 20px;
+    width: 50%;
+
 }
 .big-logo{
     text-align: center;
-    width: 500px;
     margin: 0 auto;
     background-color: white;
     outline: none;
@@ -82,6 +84,7 @@ body
     margin-top: 3px;
     height: 87vh;
     display: flex;
+    /* flex-wrap: wrap; */
 }
 .leftbar
 {
@@ -113,11 +116,46 @@ body
 }
 .html-logo
 {
-    width: 500px;
-    height: 500px;
+    width: 50%;
+    height: 50%;
     margin: 10% 30%;
 }
 
+
+@media  (max-width: 850px) {
+.main p
+    {
+        font-size: 3rem;
+    }
+    .html-main{
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+
+@media  (max-width: 620px) {
+.nav-links
+    {
+        display: block;
+    }
+.links
+{
+    display: block;
+    padding: 1em;
+}
+.nav
+{
+display: block;
+text-align: center;
+}
+.main p
+{
+    font-size: 1.5rem;
+}
+}
 
 
 
